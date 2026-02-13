@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhivya Gunasekaran | AI Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+    background: #0d1b2a;
+    color: white;
+    padding: 15px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-weight: 600;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #00b4d8;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero h2 {
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.hero p {
+    margin-top: 15px;
+    max-width: 600px;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #00b4d8;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: #0096c7;
+}
+
+/* SECTIONS */
+section {
+    padding: 100px 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section h3 {
+    margin-bottom: 20px;
+    color: #0d1b2a;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* FOOTER */
+footer {
+    background: #0d1b2a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #0d1b2a;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        color: white;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<h2>Dhivya</h2>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<ul id="nav-links">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Dhivya Gunasekaran</h1>
+<h2>M.Tech (Data Science & AI) | AI Systems Engineer</h2>
+<p>Building intelligent systems in NLP, Computer Vision and behavioral AI systems with strong academic excellence (CGPA 9.32).</p>
+<a href="#projects" class="btn">View Projects</a>
+</section>
+
+<section id="about">
+<h3>About Me</h3>
+<p>
+I am an AI and Data Science enthusiast currently pursuing M.Tech in Data Science and Artificial Intelligence at SRM Institute of Science and Technology. With a strong academic record and hands-on experience in NLP, Computer Vision, and IoT-based systems, I focus on building intelligent applications that solve real-world problems.
+</p>
+</section>
+
+<section id="skills">
+<h3>Skills</h3>
+
+<div class="card">
+<strong>Programming:</strong> Python, SQL, GraphQL, JavaScript
+</div>
+
+<div class="card">
+<strong>AI & Machine Learning:</strong> Machine Learning, Deep Learning, TensorFlow, Keras, MediaPipe, NLP
+</div>
+
+<div class="card">
+<strong>Web & Tools:</strong> HTML, CSS, Git, Jira, ServiceNow, ITRS, MATLAB, Arduino IDE
+</div>
+
+</section>
+
+<section id="projects">
+<h3>Projects</h3>
+
+<div class="card">
+<h4>Cross-Lingual Intention Analysis</h4>
+<p>Multilingual NLP system to detect grooming, peer-pressure and risky behavioral patterns in chat conversations.</p>
+</div>
+
+<div class="card">
+<h4>Sign2Speech</h4>
+<p>Sign language recognition system using MediaPipe and TensorFlow for gesture classification with speech output.</p>
+</div>
+
+<div class="card">
+<h4>TABL Helmets</h4>
+<p>IoT-based smart helmet integrating alcohol detection, ignition control, and accident alert systems.</p>
+</div>
+
+</section>
+
+<section id="education">
+<h3>Education</h3>
+
+<div class="card">
+<strong>M.Tech – Data Science & Artificial Intelligence</strong><br>
+SRM Institute of Science and Technology
+</div>
+
+<div class="card">
+<strong>B.Tech – Computer Science & Engineering</strong><br>
+CGPA: 9.32
+</div>
+
+</section>
+
+<section id="contact">
+<h3>Contact</h3>
+<p>Email: dhivyaguna29@gmail.com</p>
+<p>LinkedIn: https://linkedin.com/in/yourprofile</p>
+<p>GitHub: https://github.com/yourusername</p>
+</section>
+
+<footer>
+© 2026 Dhivya Gunasekaran | AI & Data Science
+</footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
